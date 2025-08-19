@@ -28,6 +28,13 @@ public class Main {
                    break;
                default :
                    System.out.println("Opção Inválida(por enquanto, apenas)");
+
+               case 2:
+                   System.out.println("\\n--- Tarefas ---");
+                   for (int i = 0; i < lista.size(); i++) {
+                       System.out.println(i + " - " + lista.get(i));
+                   }
+                   break;
            }
 
        } while (opcao != 0);
