@@ -28,7 +28,7 @@ public class Main {
                    break;
 
                case 2:
-                   System.out.println("\\n--- Tarefas ---");
+                   System.out.println("\n--- Tarefas ---");
                    for (int i = 0; i < lista.size(); i++) {
                        System.out.println(i + " - " + lista.get(i));
                    }
@@ -43,8 +43,22 @@ public class Main {
                    } else {
                        System.out.println("Índice inválido !");
                    }
+                   break;
 
+               case 4:
+                   System.out.println("Digite o índice da tarefa a ser removida:");
+                   int idxRemover = sc.nextInt();
+                   if (idxRemover >= 0 && idxRemover < lista.size()){
+                       lista.remove(idxRemover);
+                       System.out.println( "Tarefa removida !");
+                   } else {
+                       System.out.println("Índice inválido!");
+                   }
+                   break;
 
+               case 0:
+                   System.out.println("Saindo do programa...");
+                   break;
 
                default :
                    System.out.println("Opção Inválida(por enquanto, apenas)");
