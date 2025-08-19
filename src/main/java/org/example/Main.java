@@ -26,8 +26,6 @@ public class Main {
                    lista.add(new Tarefa(desc));
                    System.out.println("Tarefa Adicionada com Sucesso !");
                    break;
-               default :
-                   System.out.println("Opção Inválida(por enquanto, apenas)");
 
                case 2:
                    System.out.println("\\n--- Tarefas ---");
@@ -35,6 +33,22 @@ public class Main {
                        System.out.println(i + " - " + lista.get(i));
                    }
                    break;
+
+               case 3:
+                   System.out.println("Digite o Índice da tarefa:");
+                   int idxConcluir = sc.nextInt();
+                   if (idxConcluir >= 0 && idxConcluir < lista.size()){
+                       lista.get(idxConcluir).concluir();
+                       System.out.println("Tarefa concluída");
+                   } else {
+                       System.out.println("Índice inválido !");
+                   }
+
+
+
+               default :
+                   System.out.println("Opção Inválida(por enquanto, apenas)");
+
            }
 
        } while (opcao != 0);
