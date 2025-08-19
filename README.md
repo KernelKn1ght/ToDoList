@@ -72,4 +72,4 @@ Pressione ENTER para voltar ao menu...
 
 Tecnologias utilizadas: Java 17+, ArrayList para armazenamento de tarefas, Scanner para entrada de dados pelo terminal. Cada ação (adicionar, concluir ou remover) permite realizar múltiplas operações antes de voltar ao menu. Os índices das tarefas são atualizados automaticamente após cada remoção. O programa roda no terminal, sem interface gráfica.
 
-Autor: Samuel de Andrade - GitHub: https://github.com/SamuelAckerman777
+Autor: Samuel de Andrade - GitHub: https://github.com/KernelKn1ght
