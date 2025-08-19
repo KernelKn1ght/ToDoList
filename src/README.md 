@@ -1,0 +1,75 @@
+To-Do List em Java
+
+Este é um projeto simples de lista de tarefas (To-Do List) em Java. Ele permite adicionar, listar, concluir e remover tarefas diretamente pelo terminal de forma interativa.
+
+Funcionalidades: adicionar tarefas (com opção de adicionar múltiplas antes de voltar ao menu), listar todas as tarefas com status [ ] (pendente) ou [X] (concluída), concluir tarefas existentes (com opção de concluir várias), remover tarefas existentes (com opção de remover várias) e menu interativo com pausa "Pressione ENTER para voltar ao menu".
+
+Como rodar: clone este repositório usando `git clone https://github.com/SEU-USER/ToDoList-Java.git`, navegue até a pasta do projeto com `cd ToDoList-Java`, compile o código Java com `javac -d bin src/org/example/*.java` e execute com `java -cp bin org.example.Main`. Você também pode abrir no VS Code ou IntelliJ IDEA e executar direto na IDE.
+
+Estrutura do projeto:
+ToDoList-Java/
+├─ src/
+│  └─ org/example/
+│     ├─ Main.java      # Classe principal
+│     └─ Tarefa.java    # Classe que representa cada tarefa
+└─ README.md
+
+Exemplo de uso:
+
+--- TO-DO LIST ---
+1 - Adicionar Tarefa
+2 - Lista de Tarefas
+3 - Concluir Tarefa
+4 - Remover Tarefa
+0 - Sair
+Escolha: 1
+Descrição da Tarefa: Estudar Java
+Tarefa adicionada com sucesso!
+Deseja adicionar outra tarefa? (s/n): n
+Pressione ENTER para voltar ao menu...
+
+--- TO-DO LIST ---
+1 - Adicionar Tarefa
+2 - Lista de Tarefas
+3 - Concluir Tarefa
+4 - Remover Tarefa
+0 - Sair
+Escolha: 2
+
+--- Tarefas ---
+0 - [ ] Estudar Java
+Pressione ENTER para voltar ao menu...
+
+--- TO-DO LIST ---
+1 - Adicionar Tarefa
+2 - Lista de Tarefas
+3 - Concluir Tarefa
+4 - Remover Tarefa
+0 - Sair
+Escolha: 3
+
+--- Tarefas ---
+0 - [ ] Estudar Java
+Digite o índice da tarefa a concluir: 0
+Tarefa concluída!
+Deseja concluir outra tarefa? (s/n): n
+Pressione ENTER para voltar ao menu...
+
+--- TO-DO LIST ---
+1 - Adicionar Tarefa
+2 - Lista de Tarefas
+3 - Concluir Tarefa
+4 - Remover Tarefa
+0 - Sair
+Escolha: 4
+
+--- Tarefas ---
+0 - [X] Estudar Java
+Digite o índice da tarefa a ser removida: 0
+Tarefa removida!
+Deseja remover outra tarefa? (s/n): n
+Pressione ENTER para voltar ao menu...
+
+Tecnologias utilizadas: Java 17+, ArrayList para armazenamento de tarefas, Scanner para entrada de dados pelo terminal. Cada ação (adicionar, concluir ou remover) permite realizar múltiplas operações antes de voltar ao menu. Os índices das tarefas são atualizados automaticamente após cada remoção. O programa roda no terminal, sem interface gráfica.
+
+Autor: Samuel de Andrade - GitHub: https://github.com/SamuelAckerman777
